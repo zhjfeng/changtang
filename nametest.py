@@ -18,7 +18,7 @@ table = excel.sheets()[0]
 #获取姓的列表
 name1 = table.col_values(1)
 
-#删除前3个无效数据
+#删除前3个无效数据，表头
 name1 = name1[3:]
 
 #删除可能出现的空字符串情况
