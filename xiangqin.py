@@ -7,7 +7,7 @@ import json
 import re
 import requests
 from bs4 import BeautifulSoup 
-
+url3 = "http://www.zaixs.com/forum.php?mod=forumdisplay&fid=67&orderby=lastpost&dateline=2592000&typeid=32&orderby=lastpost&filter=dateline&dateline=2592000&typeid=32&page=2"
 url = "https://share.zaixs.com/wap/community/list"
 #网站做了防爬，直接发请求会403，这里要在headers里加上User-Agent
 headers = {'User-Agent': "Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Mobile Safari/537.36"}
