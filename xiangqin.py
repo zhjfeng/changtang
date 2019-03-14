@@ -26,11 +26,11 @@ def gettid():
 		tidlist.append(tid)
 	return tidlist	
 #print(gettid())
-
-#链接拼接后访问 
+#
 messagelist = []
 def getmessage():
 	for j in gettid():
+		#链接拼接后访问 
 		url2 = url1+ str(j)
 		response = requests.request("GET", url2, headers=headers)
 		#html格式化
@@ -39,7 +39,8 @@ def getmessage():
 		#根据标签取出个人信息
 		message = soup.select('.typeoption')[0].text
 		#print(message)
-		messagelist.append(message)
+		message1 = url2 + str(message)
+		messagelist.append(message1)
 	return messagelist
 #print(getmessage())
 #返回写入txt
